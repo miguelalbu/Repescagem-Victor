@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "1420:3000"
+    networks:
+      - app-network
+    deploy:
+      replicas: 2
+
+networks:
+  app-network:
+    driver: bridge
