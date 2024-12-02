@@ -4,8 +4,8 @@ const app = express();
 
 const PRIMARY_API = 'https://api.openweathermap.org/data/2.5/weather';
 const BACKUP_API = 'https://api.weatherstack.com/current';
-const PRIMARY_API_KEY = 'sua_chave_da_openweather';
-const BACKUP_API_KEY = 'sua_chave_da_weatherstack';
+const PRIMARY_API_KEY = 'a89967e41daaa96ac85ba4980517b22e';
+const BACKUP_API_KEY = 'd0ceacfe0b9866bd8e40d134fd798898';
 
 app.use(express.json());
 
